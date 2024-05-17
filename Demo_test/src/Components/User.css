@@ -1,0 +1,57 @@
+.searched_card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+  }
+  
+  .user-card {
+    width: calc(20% - 2px); 
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .pagination_btn{
+    width: 100px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 2px;
+  }
+
+  .main_div{
+    width: 64%;
+    margin: auto;
+  }
+
+  .preview_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .user_card_style{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .user-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
